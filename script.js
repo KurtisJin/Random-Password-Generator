@@ -67,7 +67,7 @@ function generatePassword() { //created a function for generating password
 
     if(dnumConfirm && capConfirm && lowConfirm && specialConfirm) { //true or false value from the prompts. 
         
-        for(var i =0; i <= userInput; i++) { //since math.random is counted less than 1 value, it needs to pick 1 character at a time.
+        for(var i =0; i < userInput; i++) { //since math.random is counted less than 1 value, it needs to pick 1 character at a time.
              randomPassword += random0[Math.floor(Math.random() * random0.length)]; //from the possible combination, it will use math.floor to round down and pick one charater at a time from the combination array. 
              console.log(randomPassword);
     
@@ -76,7 +76,7 @@ function generatePassword() { //created a function for generating password
     } else if(dnumConfirm && capConfirm && lowConfirm && !specialConfirm) {
     
         
-        for(var i =0; i <= userInput; i++) { 
+        for(var i =0; i < userInput; i++) { 
             randomPassword += random1[Math.floor(Math.random() * random1.length)];
 
         }
@@ -84,7 +84,7 @@ function generatePassword() { //created a function for generating password
     } else if(dnumConfirm && capConfirm && !lowConfirm && !specialConfirm) {
         
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             
             randomPassword += random2[Math.floor(Math.random() * random2.length)];
             console.log(randomPassword);
@@ -94,7 +94,7 @@ function generatePassword() { //created a function for generating password
 
     } else if(dnumConfirm && !capConfirm && !lowConfirm && specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random3[Math.floor(Math.random() * random3.length)];
 
         }
@@ -103,7 +103,7 @@ function generatePassword() { //created a function for generating password
         
         
         console.log(userInput);
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random5[Math.floor(Math.random() * random5.length)];
             console.log(randomPassword);
     
@@ -111,47 +111,47 @@ function generatePassword() { //created a function for generating password
 
     } else if(dnumConfirm && !capConfirm && !lowConfirm && specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
         randomPassword += random3[Math.floor(Math.random() * random3.length)];
         }
     
     } else if (!dnumConfirm && capConfirm && lowConfirm && specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random6[Math.floor(Math.random() * random6.length)];
 
         }
 
     } else if (!dnumConfirm && capConfirm && lowConfirm && !specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random7[Math.floor(Math.random() * random7.length)];
 
     }
 
     } else if (!dnumConfirm && !capConfirm && lowConfirm && specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
         randomPassword += random10[Math.floor(Math.random() * random10.length)];
     }
 
     } else if (!dnumConfirm && capConfirm && !lowConfirm && !specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random9[Math.floor(Math.random() * random9.length)];
 
         }
 
     } else if (!dnumConfirm && capConfirm && !lowConfirm && specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random8[Math.floor(Math.random() * random8.length)];
     
         }
     
     } else if(!dnumConfirm && !capConfirm && lowConfirm && !specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random11[Math.floor(Math.random() * random11.length)];
 
         }
@@ -159,7 +159,7 @@ function generatePassword() { //created a function for generating password
 
     } else if (!dnumConfirm && !capConfirm && !lowConfirm && specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random12[Math.floor(Math.random() * random12.length)];
 
         }
@@ -167,7 +167,7 @@ function generatePassword() { //created a function for generating password
 
     } else if(dnumConfirm && !capConfirm && lowConfirm && !specialConfirm) {
         
-        for(var i =0; i <= userInput; i++) {
+        for(var i =0; i < userInput; i++) {
             randomPassword += random4[Math.floor(Math.random() * random4.length)];
 
         }
